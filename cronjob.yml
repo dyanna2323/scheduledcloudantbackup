@@ -9,6 +9,8 @@ spec:
     spec:
       template:
         spec:
+          imagePullSecrets:
+            - name: <secret-name-to-pull-images> 
           containers:
           - name: backup
             # the name of your image in the registry
